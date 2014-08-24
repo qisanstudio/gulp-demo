@@ -1,11 +1,13 @@
 <!doctype html>
-<html class="no-js">
+<html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>gulp text</title>
-        <meta name="description" content="">
+        <title>起点快运</title>
+        <meta name="description" content="提供快捷方便的转运服务">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href="/favicon.ico" rel="shotcut icon">
 
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -20,45 +22,64 @@
         <script src="/bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <body data-spy="scroll">
+        <!--[if lt IE 9]>
+            <script src="https://brokerage-static.s3.amazonaws.com/assets/html5shiv/html5shiv.js"></script>
+            <script src="https://brokerage-static.s3.amazonaws.com/assets/respond/respond.min.js"></script>
+            <script src="https://brokerage-static.s3.amazonaws.com/assets/robinhood/js/bind-polyfill.js"></script>
         <![endif]-->
+        <nav id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+             <div class="container-fluid">
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">gulp text</h3>
-            </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass</h4>
-                    <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img alt="Brand" src="/favicon.ico"></a>
                 </div>
-            </div>
 
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
+                <div class="collapse navbar-collapse navbar-left">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#service">业务介绍</a></li>
+                        <li class=""><a href="#query">快速查询</a></li>
+                        <li class=""><a href="#news">相关知识</a></li>
+                    </ul>
+                </div>
+
+                <form class="navbar-form navbar-right" role="signup">
+                    <div class="form-group">
+                        <input type="邮箱" class="form-control" name="email" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <input type="密码" class="form-control" name="password" placeholder="密码">
+                    </div>
+                   <button type="submit" class="btn btn-default">注册</button>
+                </form>
+
+            </div>
+        </nav>
+
+
+        <div id="slide" data-target="#nav" data-offset="0">
+            <div id="service" class="jumbotron">
+                <h1>服务项目</h1>
+                <p>服务项目</p>
+                <p>服务项目</p>
+                <p>服务项目</p>
+                <p>服务项目</p>
+                <p>服务项目</p>
+                <p><a class="btn btn-primary btn-lg" role="button">了解更多</a></p>
+            </div>
+            <div id="query" class="jumbotron">
+                <h1>货单查询</h1>
+                <p>点击可查询</p>
+                <p>点击可查询</p>
+                <p>点击可查询</p>
+                <p>点击可查询</p>
+                <p>点击可查询</p>
+                <p><a class="btn btn-primary btn-lg" role="button">点击查询</a></p>
+            </div>
+            <div id="news" class="jumbotron">
+                <h1>新闻报道</h1>
+                <p>新闻报道</p>
+                <p><a class="btn btn-primary btn-lg" role="button">更多</a></p>
             </div>
         </div>
 

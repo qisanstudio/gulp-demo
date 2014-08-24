@@ -6602,3 +6602,6 @@ body {
     border-bottom: 0;
   }
 }
+#slide .jumbotron {
+  min-height: 800px;
+}
