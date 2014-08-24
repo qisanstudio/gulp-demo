@@ -1,2 +1,5 @@
+node_modules
+.tmp
 .sass-cache
-src/demo/static/*
+src/demo/static/
+static-src/bower_components
